@@ -4,7 +4,7 @@ __date__ = '2018/11/4 13:57'
 
 import datetime,socket,requests,base64
 
-LOGIN_PAGE_URL = "https://gw.buaa.edu.cn:804/beihanglogin.php?ac_id=1&url=http://gw.buaa.edu.cn:804/beihangview.php"
+LOGIN_PAGE_URL = "** your LOGIN_URL **"
 def is_net_ok():
         s = socket.socket()
         s.settimeout(3)
@@ -38,4 +38,4 @@ def login_request(name , password):
                 print("[02] {} raspberry is online  ".format(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
 if __name__ == "__main__":
-        login_request("sy1507605", "z1992s")
+        login_request("your name", "your pass")
